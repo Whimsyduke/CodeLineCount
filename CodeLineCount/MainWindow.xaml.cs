@@ -56,6 +56,7 @@ namespace CodeLineCount
             {
                 fileCount++;
                 totalCount += select.TotalLines;
+                mineCount += select.MineLines;
             }
             Result.Content = "文件总数：" + fileCount.ToString() + "，总行数：" + totalCount.ToString() + "自己写行数：" + mineCount.ToString();
         }
